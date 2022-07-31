@@ -9,33 +9,21 @@ body {
 h1 {
     font-family: 'Fraunces', sans-serif;
     font-weight: 700;
-    padding-top: 10px;
-    padding-bottom: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 section {
     display: flex;
-    flex-direction: column;
-
+    flex-direction: row;
 
 }
 
 .perfume_img {
-    height: 300px;
-    width: 500px;
-    object-fit: cover;
-    margin-top: auto;
+    height: 500px;
+    width: 400px;
     border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    margin: 0;
-}
-
-#text_box {
-    height: 350px;
-    width: 500px;
-    padding: 25px;
     border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
 
 }
 
@@ -46,7 +34,6 @@ section {
     color: hsl(228, 12%, 48%);
 }
 
-
 #text {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
@@ -54,6 +41,21 @@ section {
     word-spacing: .25em;
 
     color: hsl(228, 12%, 48%);
+
+}
+
+#pricing {
+    padding-top: 20px;
+    padding-bottom: 30px;
+
+}
+
+#text_box {
+    padding: 25px;
+    height: 500px;
+    width: 400px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
 
 
 }
@@ -63,6 +65,7 @@ section {
     font-weight: 700;
     font-size: 2em;
     color: hsl(159, 46%, 36%);
+    padding-right: 15px;
 }
 
 #discount {
@@ -82,38 +85,80 @@ section {
     background-color: hsl(158, 60%, 9%);
 }
 
-@media(min-width:768px) {
+@media (min-width:200px) and (max-width:514px) {
+
     h1 {
-        padding-top: 15px;
-        padding-bottom: 15px;
+        font-size: x-large;
+        padding: 2px;
     }
 
     section {
-        flex-direction: row;
-
+        flex-direction: column;
     }
 
     .perfume_img {
-        height: 500px;
-        width: 400px;
+        height: 300px;
+        width: 300px;
+        object-fit: cover;
         border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 0px;
+    }
+
+    #text_box {
+        height: 300px;
+        width: 300px;
         border-bottom-left-radius: 15px;
-        border-top-right-radius: 0;
+        border-bottom-right-radius: 15px;
+        border-top-right-radius: 0px;
+    }
+
+    #text {
+        font-size: small;
+    }
+
+    #pricing {
+        font-size: small;
+        padding: 0px;
+    }
+
+    .btn {
+        padding: 5px;
+        margin: 0px;
+    }
+}
+
+
+@media(min-width: 515px) and (max-width:768px) {
+
+    h1 {
+        padding-top: 10px;
+        padding-bottom: 5px;
+    }
+
+    section {
+        flex-direction: column;
+    }
+
+    .perfume_img {
+        height: 300px;
+        width: 500px;
+        object-fit: cover;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 0px;
+    }
+
+    #text_box {
+        height: 350px;
+        width: 500px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        border-top-right-radius: 0px;
 
     }
 
     #pricing {
-        padding-top: 20px;
-        padding-bottom: 30px;
-        text-align: none;
-    }
-
-    #text_box {
-        height: 500px;
-        width: 400px;
-        border-top-right-radius: 15px;
-        border-bottom-right-radius: 15px;
-        border-bottom-left-radius: 0;
-
+        padding: 0px;
     }
 }
